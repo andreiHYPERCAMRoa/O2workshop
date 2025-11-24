@@ -1,0 +1,443 @@
+/* ============================
+   GLOBAL
+============================ */
+body {
+    margin: 0;
+    font-family: 'Knewave', sans-serif;
+    background: #1b1414;
+    color: white;
+    
+
+
+
+}
+
+.header2{
+    background: white;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+
+}
+
+.header2 img{
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+}    
+
+
+header {
+    background: #ef4b4b;
+    padding: 12px;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 35px;
+    height: 35px;
+    border-radius: 4px;
+}
+
+/* ============================
+   HEADER LAYOUT
+============================ */
+header {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+}
+
+.logo {
+    width: 55px;
+    height: 55px;
+    border-radius: 8px;
+}
+
+/* Right side: search + hamburger */
+.header-right {
+    margin-left: auto;       /* pushes icons to right */
+    display: flex;
+    align-items: center;
+    gap: 18px;               /* space between icons */
+}
+
+/* ============================
+   SEARCH ICON + BOX
+============================ */
+.search-box summary {
+    list-style: none;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.search-box summary::-webkit-details-marker {
+    display: none;
+}
+
+.search-box input {
+    margin-top: 12px;
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: 1px solid #aaa;
+    width: 180px;
+    font-size: 16px;
+}
+
+/* ============================
+   HAMBURGER ICON
+============================ */
+.hamburger summary {
+    list-style: none;
+    cursor: pointer;
+}
+
+.hamburger summary::-webkit-details-marker {
+    display: none;
+}
+
+.ham-icon {
+    width: 38px;
+    height: 38px;
+   
+}
+
+.ham-icon span {
+    display: block;
+    width: 22px;
+    height: 3px;
+    background: black;
+    margin: 3px 0;
+    border-radius: 3px;
+}
+
+/* ============================
+   HAMBURGER MENU PANEL
+============================ */
+.menu-panel {
+    background: #eee;
+    border-radius: 12px;
+    padding: 15px;
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.menu-panel a {
+    color: black;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.menu-panel a:hover {
+    opacity: 0.7;
+}
+
+
+ /* SEARCH BAR (CSS COLLAPSE) */
+    details {
+        width: 40%;
+        max-width: 980px;
+        margin: 12px auto;
+    }
+    summary {
+        cursor: pointer;
+        font-size: 30px;
+        text-align: right;
+        list-style: none;
+    }
+    summary::-webkit-details-marker {
+        display: none; /* hide arrow */
+    }
+
+    #searchInput {
+        width: 99%;
+        padding: 10px;
+        border: 2px solid #999;
+        border-radius: 8px;
+        font-size: 16px;
+        margin-top: 8px;
+    }
+
+  
+
+
+
+
+/* ============================
+   NAVIGATION
+============================ */
+nav {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    background: #eee;
+    padding: 12px 0;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #000000;
+    font-size: 18px;
+    font-family:  Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+nav a:hover {
+    opacity: 0.7;
+}
+
+/* ============================
+   BANNERS
+============================ */
+.banner{
+
+     background-image: url('channels4_profile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;     
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 800px;
+      font-weight: bold;
+      color: red;
+      width: auto;
+}
+.banner1 {
+   background-image: url('channels4_profile.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;     
+      text-align: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 800px;
+      font-weight: bold;
+      color: red;
+      
+}
+
+
+
+.banner {
+    height: 200px;
+}
+
+.banner1 {
+    height: 800px;;
+}
+
+
+/* ============================
+   SECTION TITLES
+============================ */
+.section-title {
+    text-align: center;
+    color: #ef333f;
+    background: #eee;
+    font-size: 28px;
+  
+    padding: 14px;
+    font-weight: bold;
+}
+
+
+
+/* ============================
+   SHOP BY CATEGORY
+============================ */
+.category-wrapper {
+    width: 100%;
+    
+    
+}
+
+.category-list {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 25px;
+    width: 90%;
+    max-width:600px;
+    margin: auto;
+}
+
+.category-card {
+    background: #eee;
+    padding: 40px 20px;
+    text-align: center;
+    border-radius: 20px;
+    color: #ef333f;
+    font-size: 34px;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+
+.category-card:hover {
+    opacity: 0.8;
+}
+
+/* ============================
+   PRODUCT GRID
+============================ */
+.products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+    gap: 25px;
+    padding: 20px;
+}
+
+.item, .mug {
+    background: #2a2323;
+    border-radius: 12px;
+    padding: 15px;
+    text-align: center;
+}
+
+.item img, .mug img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.mug img {
+    height: 350px;
+    object-fit: cover;
+}
+
+.item h3, .mug h3 {
+    color: #ef333f;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+item p {
+    color: #ef333f;
+}
+
+/* ============================
+   BUTTON
+============================ */
+.btn {
+    display: block;
+    margin: 25px auto;
+    background: white;
+    padding: 12px 25px;
+    border-radius: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    width: fit-content;
+    text-decoration: none;
+}
+
+.btn:hover {
+    background: #ccc;
+}
+
+/* ============================
+   FOOTER
+============================ */
+footer {
+    background: #e5e5e5;
+    color: black;
+    padding: 40px 0;
+    margin-top: 50px;
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footer-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* keep pages + links centered */
+}
+
+.footer-logo {
+    width: 100%;
+    text-align: left; /* LOGO GOES LEFT */
+}
+
+.footer-logo img {
+    width: 80px;
+    height: 80px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.footer-pages {
+    display: flex;
+    justify-content: center;
+    gap: 80px;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.footer-pages a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-pages a:hover {
+    opacity: 0.6;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 10px;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.footer-links a:hover {
+    opacity: 0.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+    .footer-pages {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+
+
+ @media (max-width: 800px) {
+
+            .products {
+           grid-template-columns: repeat(2, 1fr);
+        }
+
+ /* If screen is VERY small (phones), switch to 1 column */
+        @media (max-width: 500px) {
+            .products {
+                grid-template-columns: 1fr;
+            }
+        }
