@@ -28,7 +28,7 @@ body {
 
 
 header {
-    background: #ff3337;
+    background-color: #ff3337;
     padding: 12px;
     display: flex;
     align-items: center;
@@ -220,8 +220,7 @@ nav a:hover {
       align-items: center;
       font-size: 800px;
       font-weight: bold;
-      color: #ff3337;
-      
+      color: #ff3337;      
 }
 
 
@@ -274,7 +273,7 @@ nav a:hover {
     padding: 40px 20px;
     text-align: center;
     border-radius: 20px;
-    color: #ef333f;
+    color: ff3337;
     font-size: 34px;
     font-weight: bold;
     text-decoration: none;
