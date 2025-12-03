@@ -28,7 +28,7 @@ body {
 
 
 header {
-    background: #ef4b4b;
+    background: #ff3337;
     padding: 12px;
     display: flex;
     align-items: center;
@@ -206,7 +206,7 @@ nav a:hover {
       align-items: center;
       font-size: 800px;
       font-weight: bold;
-      color: red;
+      color: #ff3337;
       width: auto;
 }
 .banner1 {
@@ -220,7 +220,7 @@ nav a:hover {
       align-items: center;
       font-size: 800px;
       font-weight: bold;
-      color: red;
+      color: #ff3337;
       
 }
 
@@ -240,7 +240,7 @@ nav a:hover {
 ============================ */
 .section-title {
     text-align: center;
-    color: #ef333f;
+    color: #ff3337;    
     background: #eee;
     font-size: 28px;
   
